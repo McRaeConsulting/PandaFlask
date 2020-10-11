@@ -3,3 +3,4 @@
 Example project that uses python (flask) as web app to display ONS deaths data using Google charts. Using pandas to read data from the ONS published excel spreadsheet and transform said data into a format usable by Google charts.
 
 Includes a docker-compose file to containerise it. The docker is using traefik, nginx and gunicorn to turn it into a web app.
+To use this for your own site, replace all occurrences of "HOST_NAME" with either a FQDN or IP address.
