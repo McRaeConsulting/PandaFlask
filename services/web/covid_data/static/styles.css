@@ -1,0 +1,14 @@
+
+/* Utilise jQuery's "use a class selector to attach js events to" functionality */
+.sidenav-js {
+  /*DO NOT STYLE ME!*/
+}
+
+.w3-main {
+  margin-left: 250px;
+}
+
+nav {
+  z-index:3;
+  width:250px;
+}

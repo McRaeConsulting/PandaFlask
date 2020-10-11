@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block script %}
+<script>
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', {'packages': ['corechart']});
+    google.charts.setOnLoadCallback(drawTimeSeriesChart);
+    google.charts.setOnLoadCallback(drawDeathsBarChart);
+    google.charts.setOnLoadCallback(drawRegionPieChart);
+ </script>
+{% endblock %}
+
+{% block title %}Weekly Deaths Registrations{% endblock %}
+{% block content %}
+<div class="w3-content">
+    <div class="w3-container" id="time-series-chart"></div>
+    <div class="w3-container" id="deaths-pie-chart"></div>
+    <div class="w3-container" id="regions-pie-chart"></div>
+    <div class="w3-container" id="histogram-chart"></div>
+</div>
+{% endblock %}
